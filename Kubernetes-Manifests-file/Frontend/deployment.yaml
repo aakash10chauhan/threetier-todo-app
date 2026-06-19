@@ -23,7 +23,7 @@ spec:
     spec: 
       containers:
       - name: frontend
-        image: astro103/frontend:latest
+        image: 252610334383.dkr.ecr.us-east-1.amazonaws.com/todo-frontend:v1.0.1
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

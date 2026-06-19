@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: astro103/backend:latest
+        image: 252610334383.dkr.ecr.us-east-1.amazonaws.com/todo-backend:v1.0.1
         imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
