@@ -17,8 +17,8 @@ spec:
       - name: mon
         image: mongo:4.4.6
         command:
-            - "numactl"
-            - "--interleave=all"
+            - "/usr/local/bin/docker-entrypoint.sh"
+        args:
             - "mongod"
             - "--wiredTigerCacheSizeGB"
             - "0.1"
@@ -42,5 +42,4 @@ spec:
             mountPath: /data/db
       volumes: 
       - name: mongo-volume
-        persistentVolumeClaim:
-          claimName: mongo-volume-claim
+        emptyDir: {}
