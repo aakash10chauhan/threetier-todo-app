@@ -63,6 +63,7 @@ aws eks delete-fargate-profile --cluster-name my-cluster --fargate-profile-name 
 
 
 ----------------------------------Post deployment steps if required--------------------------------------
+
 aws iam create-policy-version --policy-arn arn:aws:iam::252610334383:policy/AWSLoadBalancerControllerIAMPolicy --policy-document file://iam_policy.json --set-as-default
 
 new policy
